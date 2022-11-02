@@ -23,8 +23,9 @@ headDropdown.addEventListener('change', () => {
   // increment the head change count state
   head++;
   // update the dom for the head (use style.backgroundImage on the headEl div instead of trying to set the .src -- it's NOT an img tag!)
-  headEl.style.backgroundImage = `url('./assets/${headDropdown.value}-head.png)`;
+  headEl.style.backgroundImage = `url('./assets/${headDropdown.value}-head.png')`;
   // update the stats to show the new count (call displayStats() to do this work)
+  displayStats();
 });
 
 middleDropdown.addEventListener('change', () => {
