@@ -19,7 +19,7 @@ let catchphrases = [];
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
-    console.log('clicking head', headDropdown.value);
+    //console.log('clicking head', headDropdown.value);
     // increment the head change count state
     head++;
     // update the dom for the head (use style.backgroundImage on the headEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -30,7 +30,7 @@ headDropdown.addEventListener('change', () => {
 
 middleDropdown.addEventListener('change', () => {
     // get the value of the middle dropdown
-    console.log('clicking middle', middleDropdown.value);
+    //console.log('clicking middle', middleDropdown.value);
     // increment the middle change count state
     middle++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -41,7 +41,7 @@ middleDropdown.addEventListener('change', () => {
 
 bottomDropdown.addEventListener('change', () => {
     // get the value of the bottom dropdown
-    console.log('clicking bottom', bottomDropdown.value);
+    //console.log('clicking bottom', bottomDropdown.value);
     // increment the bottom change count state
     bottom++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -52,7 +52,7 @@ bottomDropdown.addEventListener('change', () => {
 
 catchphraseButton.addEventListener('click', () => {
     // get the value of the catchphrase input
-    console.log('catching phrase', catchphraseButton.value);
+    //console.log('catching phrase', catchphraseButton.value);
     // push the new catchphrase to the catchphrase array in state
     catchphrases.push(catchphraseInput.value);
     // clear out the form input's value so it's empty to the user
