@@ -19,8 +19,11 @@ let catchphrases = [];
 
 headDropdown.addEventListener('change', () => {
   // get the value of the head dropdown
+  console.log('clicking head', headDropdown.value);
   // increment the head change count state
+  head++;
   // update the dom for the head (use style.backgroundImage on the headEl div instead of trying to set the .src -- it's NOT an img tag!)
+  headEl.style.backgroundImage = `url('./assets/${headDropdown.value}-head.png)`;
   // update the stats to show the new count (call displayStats() to do this work)
 });
 
@@ -47,6 +50,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
   // text content of the reportEl to tell the user how many times they've changed each piece of the state
+  reportEl.textContent = `You have change the head ${head} times, the body ${middle} times, and the pants ${bottom} times.`;
 }
 
 function displayCatchphrases() {
